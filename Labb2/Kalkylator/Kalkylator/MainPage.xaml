@@ -1,0 +1,57 @@
+﻿<Page
+    x:Class="Kalkylator.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Kalkylator"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Width="500" Height="600">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Rectangle Grid.Row="0" Fill="LightGray"></Rectangle>
+        <Rectangle Grid.Row="1" Fill="LightGray"></Rectangle>
+        <Grid Grid.Row="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+            </Grid.RowDefinitions>
+            <TextBox Name="Kalkylator_ruta1" Grid.Row="0" Height="40" Width="400" FontWeight="Bold" FontSize="20" Margin="0,10,0,0" BorderThickness="0" AllowFocusOnInteraction="False" IsReadOnly="True"></TextBox>
+            <TextBox Name="Kalkylator_ruta2" Grid.Row="1" Height="60" Width="400" FontWeight="Bold" FontSize="40" Margin="0,0,0,0" BorderThickness="0" AllowFocusOnInteraction="False" IsReadOnly="True"></TextBox>
+        </Grid>
+        <Grid Grid.Row="1" Margin="50,10,50,10" HorizontalAlignment="Center">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+                <RowDefinition Height="Auto"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"></ColumnDefinition>
+                <ColumnDefinition Width="Auto"></ColumnDefinition>
+                <ColumnDefinition Width="Auto"></ColumnDefinition>
+                <ColumnDefinition Width="Auto"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Button Name="One" HorizontalAlignment="Center" FontWeight="Bold" FontSize="35" Grid.Row="0" Grid.Column="0" Width="80" Height="80" Background="White" BorderBrush="Black" Click="One_Click" Foreground="Black">1</Button>
+            <Button Name="Two" HorizontalAlignment="Center" FontWeight="Bold" FontSize="35" Grid.Row="0" Grid.Column="1" Width="80" Height="80" Background="White" BorderBrush="Black" Click="Two_Click" Foreground="Black">2</Button>
+            <Button Name="Three" HorizontalAlignment="Center" FontWeight="Bold" FontSize="35" Grid.Row="0" Grid.Column="2" Width="80" Height="80" Background="White" BorderBrush="Black" Click="Three_Click" Foreground="Black">3</Button>
+            <Button Name="Add" HorizontalAlignment="Center" FontWeight="Bold" FontSize="35" Grid.Row="0" Grid.Column="3" Width="80" Height="80" Background="White" BorderBrush="Black" Click="Add_Click" Foreground="Black">+</Button>
+            <Button Name="Four" HorizontalAlignment="Center" FontWeight="Bold" FontSize="35" Grid.Row="1" Grid.Column="0" Width="80" Height="80" Background="White" BorderBrush="Black" Click="Four_Click" Foreground="Black">4</Button>
+            <Button Name="Five" HorizontalAlignment="Center" FontWeight="Bold" FontSize="35" Grid.Row="1" Grid.Column="1" Width="80" Height="80" Background="White" BorderBrush="Black" Click="Five_Click" Foreground="Black">5</Button>
+            <Button Name="Six" HorizontalAlignment="Center" FontWeight="Bold" FontSize="35" Grid.Row="1" Grid.Column="2" Width="80" Height="80" Background="White" BorderBrush="Black" Click="Six_Click" Foreground="Black">6</Button>
+            <Button Name="Sub" HorizontalAlignment="Center" FontWeight="Bold" FontSize="35" Grid.Row="1" Grid.Column="3" Width="80" Height="80" Background="White" BorderBrush="Black" Click="Sub_Click" Foreground="Black">-</Button>
+            <Button Name="Seven" HorizontalAlignment="Center" FontWeight="Bold" FontSize="35" Grid.Row="2" Grid.Column="0" Width="80" Height="80" Background="White" BorderBrush="Black" Click="Seven_Click" Foreground="Black">7</Button>
+            <Button Name="Eight" HorizontalAlignment="Center" FontWeight="Bold" FontSize="35" Grid.Row="2" Grid.Column="1" Width="80" Height="80" Background="White" BorderBrush="Black" Click="Eight_Click" Foreground="Black">8</Button>
+            <Button Name="Nine" HorizontalAlignment="Center" FontWeight="Bold" FontSize="35" Grid.Row="2" Grid.Column="2" Width="80" Height="80" Background="White" BorderBrush="Black" Click="Nine_Click" Foreground="Black">9</Button>
+            <Button Name="Mul" HorizontalAlignment="Center" FontWeight="Bold" FontSize="35" Grid.Row="2" Grid.Column="3" Width="80" Height="80" Background="White" BorderBrush="Black" Click="Mul_Click" Foreground="Black">x</Button>
+            <Button Name="C" HorizontalAlignment="Center" FontWeight="Bold" FontSize="35" Grid.Row="3" Grid.Column="0" Width="80" Height="80" Background="White" BorderBrush="Black" Click="C_Click" Foreground="Black">C</Button>
+            <Button Name="Zero" HorizontalAlignment="Center" FontWeight="Bold" FontSize="35" Grid.Row="3" Grid.Column="1" Width="80" Height="80" Background="White" BorderBrush="Black" Click="Zero_Click" Foreground="Black">0</Button>
+            <Button Name="Sum" HorizontalAlignment="Center" FontWeight="Bold" FontSize="35" Grid.Row="3" Grid.Column="2" Width="80" Height="80" Background="White" BorderBrush="Black" Click="Sum_Click" Foreground="Black">=</Button>
+            <Button Name="Div" HorizontalAlignment="Center" FontWeight="Bold" FontSize="35" Grid.Row="3" Grid.Column="3" Width="80" Height="80" Background="White" BorderBrush="Black" Click="Div_Click" Foreground="Black">/</Button>
+        </Grid>
+    </Grid>
+</Page>
